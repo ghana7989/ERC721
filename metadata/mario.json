@@ -1,0 +1,28 @@
+{
+	"name": "Mario",
+	"description": "Mario is my childhood romeo",
+	"image": "https://ipfs.io/ipfs/Qme4tYDAb3rLDhhxPov2aQi3LhUsCNfymPTbWtm9CrZUxs",
+	"attributes": [
+		{
+			"trait_type": "Strength",
+			"value": 7,
+			"max_value": 10
+		},
+
+		{
+			"trait_type": "Speed",
+			"value": 9,
+			"max_value": 10
+		},
+		{
+			"trait_type": "Jump",
+			"value": 10,
+			"max_value": 10
+		},
+		{
+			"trait_type": "Intelligence",
+			"value": 2,
+			"max_value": 10
+		}
+	]
+}
