@@ -1,18 +1,21 @@
 require('@nomiclabs/hardhat-waffle');
 
 async function main() {
-	const SuperMarioWorld = await ethers.getContractFactory('SuperMarioWorld');
+	const SuperMarioWorld = await ethers.getContractFactory(
+		'SuperMarioWorldERC1155',
+	);
 	const superMarioWorld = await SuperMarioWorld.deploy(
-		'SuperMarioWorld',
-		'SMW',
+		'SuperMarioWorldERC1155',
+		'SMW1155',
 	);
 	await superMarioWorld.deployed();
 	console.log('Success- Contract deployed at: ', superMarioWorld.address);
 
 	await superMarioWorld.mint(
-		'https://ipfs.io/ipfs/QmeMxxQwqM7jFW1YHUQNPR2VjSsQLJjerKFnABNUMG7XVt',
+		10,
+		'https://ipfs.io/ipfs/QmXiUkAf5HUDnqSL5Gu32G4cStThCgoGmhmSMMgYGXKmJd',
 	);
-	console.log('Success- SuperMarioWorld minted');
+	console.log('Success- SuperMarioWorldERC1155 minted');
 }
 
 main()
